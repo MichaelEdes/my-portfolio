@@ -1,8 +1,36 @@
 @font-face {
-  font-family: "Open Sauce One";
-  src: url("../assets/fonts/OpenSauceOne-Regular.woff");
+  font-family: "Open Sauce One Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Open Sauce One Regular"),
+    url("../assets/fonts/OpenSauceOne-Regular.woff") format("woff");
 }
 
 body {
   font-family: "Open Sauce One Regular";
+  margin-top: 3rem;
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  padding: 0 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: initial;
+}
+
+@media (min-width: 990px) {
+  body {
+    max-width: clamp(63rem, 1000px, 70vw);
+    padding-left: calc(var(--bs-gutter-x) * 1);
+    padding-right: calc(var(--bs-gutter-x) * 1);
+  }
 }

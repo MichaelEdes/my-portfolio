@@ -1,7 +1,29 @@
-@font-face {
-  font-family: "Open Sauce One Regular";
-  font-style: normal;
-  font-weight: normal;
-  src: local("Open Sauce One Regular"),
-    url("../../assets/fonts/OpenSauceOne-Regular.woff") format("woff");
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+section {
+  background-color: rgb(111, 167, 216);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2em;
+}
+
+.intro {
+  height: 80vh;
+}
+
+.projects {
+  height: 100vh;
+}
+
+.contact {
+  height: 30vh;
+}
+
+.container {
+  position: relative;
 }
