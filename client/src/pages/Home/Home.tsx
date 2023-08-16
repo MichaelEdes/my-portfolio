@@ -1,11 +1,14 @@
 import React from "react";
-import "./Home.module.scss";
+import styled from "./Home.module.scss";
+import "../../styles/global.scss";
 
 function Home() {
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>Hello</h1>
+      <header className={styled.header}>
+        <div>
+          <h1 className="hello">hello</h1>
+        </div>
       </header>
     </div>
   );
