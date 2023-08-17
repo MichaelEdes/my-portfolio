@@ -49,7 +49,9 @@
     margin: 0 auto;
     box-sizing: border-box;
   }
+}
 
+@media (min-width: 768px) {
   .hide {
     top: -100%;
     transition: 1s;
@@ -72,7 +74,7 @@
     background-color: white;
     top: 0;
     transition: left 0.5s;
-
+    overflow: hidden;
     ul {
       align-items: center;
       justify-content: center;
