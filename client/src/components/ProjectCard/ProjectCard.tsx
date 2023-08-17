@@ -39,5 +39,3 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 };
 
 export default ProjectCard;
-// https://iili.io/HDDLUOb.jpg"
-// https://iili.io/HDDpTEx.jpg

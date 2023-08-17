@@ -14,7 +14,7 @@ function Home() {
         <PageHero />
         <section className={`${styles.projects}`} id="projects">
           <ProjectCard
-            cardTitle="Sunderland Mobile Repair Center"
+            cardTitle="SMRC"
             cardText="E-commerce website for device repair store"
             projectLink="https://sunderlandmobiles.com"
             projectImage="https://iili.io/HDDy8DF.jpg"
@@ -26,17 +26,29 @@ function Home() {
             projectImage="https://iili.io/HDDyQRI.jpg"
           />
           <ProjectCard
-            cardTitle="SalesLynk Dashboard"
+            cardTitle="SalesLynk"
             cardText="SaaS solution developed to help cyber security professionals build stronger relationships with their clients and prospects"
-            projectLink=""
+            projectLink="https://www.saleslynk.co.uk/"
             projectImage="https://iili.io/HDm9FTP.jpg"
           />
 
           <ProjectCard
             cardTitle="Infocrypt"
             cardText="A mobile NFT marketplace"
-            projectLink=""
+            projectLink="https://www.figma.com/proto/Gf0WZiGpJDTcZHQDgEEneH/Untitled?page-id=0%3A1&node-id=2-106&viewport=241%2C48%2C0.41&scaling=scale-down&starting-point-node-id=2%3A106"
             projectImage="https://iili.io/HDb8nRV.png"
+          />
+          <ProjectCard
+            cardTitle="Metro"
+            cardText="Online website for north east sandwich shop"
+            projectLink="https://metrosandwichco.co.uk"
+            projectImage="https://iili.io/HDmtKxa.png"
+          />
+          <ProjectCard
+            cardTitle="Indrex - WIP"
+            cardText="Futuristic concept e-commerce store"
+            projectLink="https://www.indrex.co.uk"
+            projectImage="https://iili.io/HDp5IYx.png"
           />
         </section>
         <PageFooter />

@@ -1,7 +1,6 @@
 .projectContainer {
   aspect-ratio: 1;
   width: 100%;
-  border-radius: 2em;
   padding: 2em;
   box-sizing: border-box;
   display: flex;
@@ -13,6 +12,9 @@
   align-items: flex-start;
   position: relative;
   color: white;
+  overflow: hidden;
+  border-radius: 2em;
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
 
   div {
     padding: 0 3rem 0 0;
@@ -47,6 +49,10 @@
     transform: scale(1);
     color: black;
   }
+
+  &:hover .projectImage img {
+    transform: scale(1.05);
+  }
 }
 
 @media (max-width: 768px) {
@@ -74,6 +80,7 @@
   height: 100%;
   z-index: 1;
   overflow: hidden;
+  border-radius: 2em;
 
   img {
     width: 100%;
@@ -81,5 +88,23 @@
     object-fit: cover;
     border-radius: 2em;
     z-index: -1;
+    backface-visibility: hidden;
+  }
+}
+
+.projectImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 2em;
+  z-index: -1;
+  transition: transform 0.3s ease;
+}
+
+@media (max-width: 425px) {
+  .projectContainer {
+    p {
+      display: none;
+    }
   }
 }
