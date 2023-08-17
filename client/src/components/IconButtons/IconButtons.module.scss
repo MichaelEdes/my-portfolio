@@ -1,0 +1,16 @@
+.iconButton {
+  background-color: rgba(247, 246, 246, 0.688);
+  clip-path: circle(40%);
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-inline-start: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.iconButton:hover {
+  color: white;
+}

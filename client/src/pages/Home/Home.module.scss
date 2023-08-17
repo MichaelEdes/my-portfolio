@@ -5,7 +5,6 @@ main {
 }
 
 section {
-  background-color: rgb(111, 167, 216);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -18,10 +17,12 @@ section {
 
 .projects {
   height: 100vh;
+  background-color: rgb(6, 127, 89);
 }
 
 .contact {
   height: 30vh;
+  background-color: rgb(6, 127, 89);
 }
 
 .container {
@@ -29,6 +30,5 @@ section {
 }
 
 h1 {
-  color: antiquewhite;
   font-family: "Open Sauce One Regular";
 }

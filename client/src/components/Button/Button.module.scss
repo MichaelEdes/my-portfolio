@@ -1,0 +1,21 @@
+button {
+  background-color: black;
+  border: none;
+  color: white;
+  height: fit-content;
+  padding: 0.9rem 3rem;
+  border-radius: 2rem;
+  margin-right: 10px;
+  font-family: "Open Sauce One SemiBold";
+  cursor: pointer;
+  white-space: nowrap;
+  transition: 0.3s;
+
+  a {
+    color: white;
+  }
+}
+
+button:hover {
+  transform: scale(1.1);
+}
