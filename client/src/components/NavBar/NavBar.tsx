@@ -1,15 +1,16 @@
 import React, { useState, useEffect } from "react";
 import styles from "./NavBar.module.scss";
 import BurgerIcon from "../BurgerIcon/BurgerIcon";
+
 interface CustomLinkProps {
   href: string;
   children: React.ReactNode;
+  onClick: () => void;
 }
 
 const NavBar = () => {
   const [lastScrollTop, setLastScrollTop] = useState(0);
   const [showNav, setShowNav] = useState(true);
-
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
@@ -33,11 +34,17 @@ const NavBar = () => {
     <header className={`${styles.header} ${showNav ? "" : styles.hide}`}>
       <div className={styles.navContainer}>
         <a href="/">Home</a>
-        <nav>
-          <ul className={isOpen ? styles.menuVisibile : styles.not}>
-            <CustomLink href="#intro">Intro</CustomLink>
-            <CustomLink href="#projects">Projects</CustomLink>
-            <CustomLink href="#contact">Contact</CustomLink>
+        <nav className={isOpen ? styles.menuVisible : styles.menuHidden}>
+          <ul>
+            <CustomLink onClick={() => setIsOpen(!isOpen)} href="#intro">
+              Intro
+            </CustomLink>
+            <CustomLink onClick={() => setIsOpen(!isOpen)} href="#projects">
+              Projects
+            </CustomLink>
+            <CustomLink onClick={() => setIsOpen(!isOpen)} href="#contact">
+              Contact
+            </CustomLink>
           </ul>
         </nav>
         <BurgerIcon isOpen={isOpen} setIsOpen={setIsOpen} />
@@ -46,9 +53,9 @@ const NavBar = () => {
   );
 };
 
-function CustomLink({ href, children, ...props }: CustomLinkProps) {
+function CustomLink({ href, children, onClick }: CustomLinkProps) {
   return (
-    <li>
+    <li onClick={onClick}>
       <a href={href}>{children}</a>
     </li>
   );
