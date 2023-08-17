@@ -1,18 +1,38 @@
 import React from "react";
-import styled from "./Home.module.scss";
+import styles from "./Home.module.scss";
 import "../../styles/global.scss";
 import NavBar from "../../components/NavBar/NavBar";
 import PageHero from "../../components/PageHero/PageHero";
 import PageFooter from "../../components/PageFooter/PageFooter";
+import ProjectCard from "../../components/ProjectCard/ProjectCard";
 
 function Home() {
   return (
-    <div className={styled.container}>
+    <div className={styles.container}>
       <NavBar />
-      <main className={styled.content}>
+      <main className={styles.content}>
         <PageHero />
-        <section className={`${styled.projects}`} id="projects">
-          <h1>Projects</h1>
+        <section className={`${styles.projects}`} id="projects">
+          <ProjectCard
+            cardTitle="Wave"
+            cardText="A psychological health and wellness tracker"
+            projectLink=""
+          />
+          <ProjectCard
+            cardTitle="Wave"
+            cardText="A psychological health and wellness tracker"
+            projectLink=""
+          />
+          <ProjectCard
+            cardTitle="Wave"
+            cardText="A psychological health and wellness tracker"
+            projectLink=""
+          />
+          <ProjectCard
+            cardTitle="Wave"
+            cardText="A psychological health and wellness tracker"
+            projectLink=""
+          />
         </section>
         <PageFooter />
       </main>

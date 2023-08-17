@@ -1,34 +1,41 @@
 .cardContainer {
+  position: relative; /* To make sure absolute positioning of the image refers to this container */
   height: 100%;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  overflow: hidden;
   backdrop-filter: blur(10px);
   border-radius: 2em;
+  overflow: hidden;
   width: 100%;
 
   h1 {
     font-family: "Open Sauce One SemiBold";
     font-size: clamp(10px, 2.2rem, 6vw);
     margin: 0;
+    z-index: 1; /* Ensuring these appear above the image */
   }
   p {
     font-size: clamp(10px, 1rem, 3vw);
     color: rgb(36, 36, 36);
+    z-index: 1; /* Ensuring these appear above the image */
   }
 
   img {
+    position: absolute; /* Making the image position itself with respect to .cardContainer */
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    position: absolute;
-    z-index: -1000;
-    left: 0%;
+    z-index: -1; /* Sending it to the back */
+    border-radius: 2em;
   }
 }
 
 .cardContent {
+  position: relative; /* To ensure that its z-index is honored */
+  z-index: 2; /* Making sure the content is displayed over the image */
   height: 100%;
   padding: 2em 8em 2em 2em;
   backdrop-filter: blur(20px);

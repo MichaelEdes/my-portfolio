@@ -16,6 +16,12 @@ const NavBar = () => {
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollTop = window.pageYOffset;
+
+      if (currentScrollTop <= 50) {
+        setShowNav(true);
+        return;
+      }
+
       if (currentScrollTop > lastScrollTop) {
         setShowNav(false);
       } else {
@@ -23,6 +29,7 @@ const NavBar = () => {
       }
       setLastScrollTop(currentScrollTop);
     };
+
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);

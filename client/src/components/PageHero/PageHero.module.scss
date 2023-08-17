@@ -2,8 +2,7 @@
   display: grid;
   grid-template-columns: 6fr 3fr;
   gap: 20px;
-  min-height: 450px;
-
+  height: clamp(25em, 500px, 30em);
   div {
     border-radius: 2em;
   }

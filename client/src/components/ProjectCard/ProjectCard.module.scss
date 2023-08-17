@@ -1,0 +1,46 @@
+.projectContainer {
+  background-color: rgb(173, 69, 237);
+  aspect-ratio: 1;
+  width: 100%;
+  border-radius: 2em;
+  padding: 2em;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  line-height: 12px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+  color: white;
+
+  h4 {
+    margin: unset;
+    padding: unset;
+  }
+  p {
+    font-size: smaller;
+    color: rgba(255, 255, 255, 0.751);
+  }
+
+  .projectLink {
+    height: 30px;
+    width: 30px;
+    font-size: 200 !important;
+    transform: scale(0.7);
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    background-color: rgba(254, 254, 254, 0.853);
+
+    a {
+      transform: scale(0.5) !important;
+    }
+  }
+
+  .projectLink:hover {
+    transform: scale(1);
+    color: black;
+  }
+}
