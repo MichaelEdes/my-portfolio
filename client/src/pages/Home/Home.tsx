@@ -14,24 +14,29 @@ function Home() {
         <PageHero />
         <section className={`${styles.projects}`} id="projects">
           <ProjectCard
-            cardTitle="Wave"
-            cardText="A psychological health and wellness tracker"
-            projectLink=""
+            cardTitle="Sunderland Mobile Repair Center"
+            cardText="E-commerce website for device repair store"
+            projectLink="https://sunderlandmobiles.com"
+            projectImage="https://iili.io/HDDy8DF.jpg"
           />
           <ProjectCard
             cardTitle="Wave"
             cardText="A psychological health and wellness tracker"
             projectLink=""
+            projectImage="https://iili.io/HDDyQRI.jpg"
           />
           <ProjectCard
-            cardTitle="Wave"
-            cardText="A psychological health and wellness tracker"
+            cardTitle="SalesLynk Dashboard"
+            cardText="SaaS solution developed to help cyber security professionals build stronger relationships with their clients and prospects"
             projectLink=""
+            projectImage="https://iili.io/HDm9FTP.jpg"
           />
+
           <ProjectCard
-            cardTitle="Wave"
-            cardText="A psychological health and wellness tracker"
+            cardTitle="Infocrypt"
+            cardText="A mobile NFT marketplace"
             projectLink=""
+            projectImage="https://iili.io/HDb8nRV.png"
           />
         </section>
         <PageFooter />

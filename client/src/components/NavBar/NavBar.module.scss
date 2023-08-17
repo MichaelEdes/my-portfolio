@@ -44,9 +44,9 @@
 
 @media (min-width: 990px) {
   .navContainer {
-    max-width: clamp(65rem, 1000px, 70vw);
-    padding-left: calc(var(--bs-gutter-x) * 2);
-    padding-right: calc(var(--bs-gutter-x) * 2);
+    max-width: clamp(65rem, 1100px, 70vw);
+    padding-left: calc(var(--bs-gutter-x) * 1);
+    padding-right: calc(var(--bs-gutter-x) * 1);
     margin: 0 auto;
     box-sizing: border-box;
   }
