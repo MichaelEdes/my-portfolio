@@ -40,12 +40,10 @@
 
 body {
   font-family: "Open Sauce One Regular";
-  margin-top: 3rem;
   --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;
   padding: 0 1.5rem;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 3rem auto;
   width: 100%;
   box-sizing: border-box;
 }
@@ -61,7 +59,7 @@ a {
 
 @media (min-width: 990px) {
   body {
-    max-width: clamp(64rem, 1000px, 70vw);
+    max-width: clamp(64rem, 1100px, 75vw);
     padding-left: calc(var(--bs-gutter-x) * 1);
     padding-right: calc(var(--bs-gutter-x) * 1);
   }
@@ -70,5 +68,6 @@ a {
 @media (max-width: 768px) {
   body {
     margin-top: 5rem;
+    margin-bottom: 1.5rem;
   }
 }

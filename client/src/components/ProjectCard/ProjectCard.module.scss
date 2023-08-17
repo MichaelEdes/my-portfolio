@@ -7,7 +7,7 @@
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  line-height: 12px;
+  line-height: 10px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -15,13 +15,18 @@
   position: relative;
   color: white;
 
+  div {
+    padding: 0 3rem 0 0;
+  }
   h4 {
+    font-size: clamp(10px, 1rem, 6vw);
     margin: unset;
     padding: unset;
   }
   p {
-    font-size: smaller;
+    font-size: clamp(10px, 0.7rem, 3vw);
     color: rgba(255, 255, 255, 0.751);
+    line-height: 16px;
   }
 
   .projectLink {
@@ -42,5 +47,18 @@
   .projectLink:hover {
     transform: scale(1);
     color: black;
+  }
+}
+
+@media (max-width: 768px) {
+  .projectContainer {
+    line-height: 10px;
+
+    h4 {
+      font-size: clamp(10px, 0.8rem, 6vw);
+    }
+    p {
+      font-size: clamp(10px, 0.4rem, 6vw);
+    }
   }
 }
