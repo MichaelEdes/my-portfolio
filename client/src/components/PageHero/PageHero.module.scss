@@ -11,60 +11,6 @@
 
 .introduction {
   height: 100%;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-  backdrop-filter: blur(10px);
-
-  h1 {
-    font-family: "Open Sauce One SemiBold";
-    font-size: 2rem;
-    margin: 0;
-  }
-  p {
-    font-size: 1rem;
-    color: rgb(36, 36, 36);
-  }
-  .socialButtons {
-    margin-top: auto;
-    display: flex;
-    align-items: center;
-  }
-
-  .socialButtonsIcon {
-    display: flex;
-    width: 100%;
-  }
-
-  .linkedIn:hover {
-    background-color: rgb(32, 49, 195);
-  }
-  .github:hover {
-    background-color: rgb(120, 9, 225);
-  }
-  .facebook:hover {
-    background-color: rgb(62, 52, 255);
-  }
-
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    z-index: -1000;
-    left: 0%;
-  }
-}
-
-.introductionContent {
-  height: 100%;
-  padding: 2em 8em 2em 2em;
-  backdrop-filter: blur(20px);
-  background-color: rgba(252, 249, 242, 0.35);
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
 }
 
 .profileImage {
@@ -90,41 +36,6 @@
     grid-template-rows: 1fr;
     flex-direction: column;
     height: 100%;
-
-    h1 {
-      font-size: 2rem;
-    }
-  }
-  .introductionContent {
-    padding: 2em;
-    height: fit-content;
-    gap: 10px;
-    .socialButtons {
-      display: flex;
-      flex-direction: column;
-      align-items: column;
-    }
-
-    .socialButtonsIcon {
-      display: flex;
-      width: 100%;
-      justify-content: space-between;
-      padding-top: 1rem;
-    }
-
-    .linkedIn {
-      color: white;
-      background-color: rgb(32, 49, 195);
-    }
-    .github {
-      color: white;
-      background-color: rgb(120, 9, 225);
-    }
-    .facebook {
-      color: white;
-
-      background-color: rgb(62, 52, 255);
-    }
   }
 
   .heroContainer .introduction {

@@ -1,0 +1,49 @@
+.socialButtons {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+}
+
+.socialButtonsIcon {
+  display: flex;
+  width: 100%;
+}
+
+.linkedIn:hover {
+  background-color: rgb(32, 49, 195);
+}
+.github:hover {
+  background-color: rgb(120, 9, 225);
+}
+.facebook:hover {
+  background-color: rgb(62, 52, 255);
+}
+
+@media (max-width: 768px) {
+  .socialButtons {
+    display: flex;
+    flex-direction: column;
+    align-items: column;
+  }
+
+  .socialButtonsIcon {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-top: 1.5rem;
+  }
+
+  .linkedIn {
+    color: white;
+    background-color: rgb(32, 49, 195) !important;
+  }
+  .github {
+    color: white;
+    background-color: rgb(120, 9, 225) !important;
+  }
+  .facebook {
+    color: white;
+
+    background-color: rgb(62, 52, 255) !important;
+  }
+}
