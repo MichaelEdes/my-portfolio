@@ -15,8 +15,8 @@ const BlurredCard: React.FC<BlurredCardProps> = ({
   children,
 }) => {
   return (
-    <div className={styles.introduction}>
-      <div className={styles.introductionContent}>
+    <div className={styles.cardContainer}>
+      <div className={styles.cardContent}>
         <h1>{cardTitle}</h1>
         <div>
           <p>{cardSubTitle}</p>

@@ -4,7 +4,7 @@ import styles from "./PageFooter.module.scss";
 
 const PageFooter = () => {
   return (
-    <section className={styles.footerContainer}>
+    <section className={styles.footerContainer} id="contact">
       <BlurredCard
         cardTitle="Want to work together?"
         cardSubTitle="Feel free to reach out for further details."

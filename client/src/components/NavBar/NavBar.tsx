@@ -29,7 +29,6 @@ const NavBar = () => {
     };
   }, [lastScrollTop]);
 
-  console.log(isOpen);
   return (
     <header className={`${styles.header} ${showNav ? "" : styles.hide}`}>
       <div className={styles.navContainer}>

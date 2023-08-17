@@ -5,7 +5,7 @@ import BlurredCard from "../BlurredCard/BlurredCard";
 
 const PageHero = () => {
   return (
-    <section className={styles.heroContainer}>
+    <section className={styles.heroContainer} id="intro">
       <div className={styles.introduction}>
         <BlurredCard
           cardTitle="Hello, I'm Michael, a software engineer with 2 years of experience."

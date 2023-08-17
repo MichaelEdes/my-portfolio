@@ -1,4 +1,4 @@
-.introduction {
+.cardContainer {
   height: 100%;
   box-sizing: border-box;
   display: flex;
@@ -28,7 +28,7 @@
   }
 }
 
-.introductionContent {
+.cardContent {
   height: 100%;
   padding: 2em 8em 2em 2em;
   backdrop-filter: blur(20px);
@@ -39,18 +39,7 @@
 }
 
 @media (max-width: 768px) {
-  .heroContainer {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    flex-direction: column;
-    height: 100%;
-
-    h1 {
-      font-size: clamp(10px, 1rem, 1rem);
-    }
-  }
-  .introductionContent {
+  .cardContent {
     padding: 2em;
     height: fit-content;
     gap: 20px;
