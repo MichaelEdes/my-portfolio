@@ -6,6 +6,38 @@
     url("../assets/fonts/OpenSauceOne-Regular.woff") format("woff");
 }
 
+@font-face {
+  font-family: "Open Sauce One Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Open Sauce One Bold"),
+    url("../assets/fonts/OpenSauceOne-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Open Sauce One SemiBold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Open Sauce One SemiBold"),
+    url("../assets/fonts/OpenSauceOne-SemiBold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Open Sauce One Extra Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Open Sauce One Extra Bold"),
+    url("../assets/fonts/OpenSauceOne-ExtraBold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Open Sauce One Light";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Open Sauce One Light"),
+    url("../assets/fonts/OpenSauceOne-Light.woff") format("woff");
+}
+
 body {
   font-family: "Open Sauce One Regular";
   margin-top: 3rem;
@@ -16,6 +48,7 @@ body {
   margin-right: auto;
   width: 100%;
   box-sizing: border-box;
+  letter-spacing: 0.5px;
 }
 
 html {
@@ -29,8 +62,14 @@ a {
 
 @media (min-width: 990px) {
   body {
-    max-width: clamp(63rem, 1000px, 70vw);
+    max-width: clamp(64rem, 1000px, 70vw);
     padding-left: calc(var(--bs-gutter-x) * 1);
     padding-right: calc(var(--bs-gutter-x) * 1);
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    margin-top: 5rem;
   }
 }
