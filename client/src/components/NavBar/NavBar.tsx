@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import styles from "./NavBar.module.scss";
 import BurgerIcon from "../BurgerIcon/BurgerIcon";
-
 interface CustomLinkProps {
   href: string;
   children: React.ReactNode;
@@ -39,7 +38,9 @@ const NavBar = () => {
   return (
     <header className={`${styles.header} ${showNav ? "" : styles.hide}`}>
       <div className={styles.navContainer}>
-        <a href="/">Home</a>
+        <a href="/" className={styles.navIcon}>
+          <img src="https://iili.io/HDpbipS.png" alt="logo" />
+        </a>
         <nav className={isOpen ? styles.menuVisible : styles.menuHidden}>
           <ul>
             <CustomLink onClick={() => setIsOpen(!isOpen)} href="#intro">

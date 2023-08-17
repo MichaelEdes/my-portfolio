@@ -41,7 +41,7 @@ function Home() {
           <ProjectCard
             cardTitle="Metro"
             cardText="Online website for north east sandwich shop"
-            projectLink="https://metrosandwichco.co.uk"
+            projectLink="http://metrosandwichco.co.uk"
             projectImage="https://iili.io/HDmtKxa.png"
           />
           <ProjectCard
