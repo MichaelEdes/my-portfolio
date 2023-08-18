@@ -20,7 +20,7 @@ import SwiftIcon from "../../components/Icons/Swift";
 import JawsDBIcon from "../../components/Icons/JawsDB";
 import FigmaIcon from "../../components/Icons/Figma";
 import IconButton from "../../components/IconButtons/IconButtons";
-import { Close, NorthEast } from "@mui/icons-material";
+import { Close } from "@mui/icons-material";
 
 enum Technologies {
   HTML = "HTML",
