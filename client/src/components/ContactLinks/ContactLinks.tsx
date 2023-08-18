@@ -7,9 +7,9 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 const ContactLinks = () => {
   return (
     <div className={styles.socialButtons}>
-      <Button>
-        <a href="#contact">Contact Me</a>
-      </Button>
+      <a href="mailto:michaeledes.dev@gmail.com">
+        <Button>Contact Me</Button>
+      </a>
       <div className={styles.socialButtonsIcon}>
         <IconButton
           classname={styles.linkedIn}

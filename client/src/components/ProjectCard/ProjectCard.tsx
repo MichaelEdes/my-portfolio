@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import IconButton from "../IconButtons/IconButtons";
 import styles from "./ProjectCard.module.scss";
 import CallMadeIcon from "@mui/icons-material/CallMade";
+import { Expand } from "@mui/icons-material";
 
 type ProjectCardProps = {
   cardTitle: string;
@@ -18,23 +19,40 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   projectImage,
   onClick,
 }) => {
+  const [isSmallScreen, setIsSmallScreen] = useState(true);
+
+  useEffect(() => {
+    if (window.innerWidth > 425) {
+      setIsSmallScreen(false);
+    }
+  }, []);
+
   return (
-    <div className={styles.projectContainer} onClick={onClick}>
+    <div className={styles.projectContainer}>
       <div className={styles.projectContent}>
         <div>
           <h4>{cardTitle}</h4>
           <p>{cardText}</p>
         </div>
-        <IconButton
-          href={projectLink}
-          classname={styles.projectLink}
-          target="_blank"
-        >
-          <CallMadeIcon />
-        </IconButton>
+        <div>
+          <IconButton
+            href={projectLink}
+            classname={styles.projectLink}
+            target="_blank"
+          >
+            <CallMadeIcon />
+          </IconButton>
+          {isSmallScreen && (
+            <div>
+              <IconButton href="">
+                <Expand />
+              </IconButton>
+            </div>
+          )}
+        </div>
       </div>
-      <div className={styles.projectImage}>
-        <img src={projectImage} alt="wave project" />
+      <div className={styles.projectImage} onClick={onClick}>
+        <img loading="lazy" src={projectImage} alt="wave project" />
       </div>
     </div>
   );
