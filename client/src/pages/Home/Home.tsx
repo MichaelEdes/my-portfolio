@@ -225,7 +225,7 @@ function ProjectDetails({ project, onClose }: ProjectDetailsProps) {
 }
 
 function Home() {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
 
   useEffect(() => {
