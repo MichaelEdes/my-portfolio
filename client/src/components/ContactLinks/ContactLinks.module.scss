@@ -22,15 +22,14 @@
 @media (max-width: 768px) {
   .socialButtons {
     display: flex;
-    flex-direction: column;
-    align-items: column;
+    flex-direction: row;
+    align-items: center;
   }
 
   .socialButtonsIcon {
     display: flex;
     width: 100%;
-    justify-content: space-between;
-    padding-top: 1.5rem;
+    justify-content: space-evenly;
   }
 
   .linkedIn {

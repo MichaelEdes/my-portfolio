@@ -51,6 +51,18 @@ const NavBar = () => {
     };
   }, []);
 
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [isOpen]);
+
   return (
     <header className={`${styles.header} ${showNav ? "" : styles.hide}`}>
       <div className={styles.navContainer}>

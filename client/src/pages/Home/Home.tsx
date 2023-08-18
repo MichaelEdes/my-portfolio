@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styles from "./Home.module.scss";
 import "../../styles/global.scss";
 import NavBar from "../../components/NavBar/NavBar";
@@ -20,7 +20,7 @@ import SwiftIcon from "../../components/Icons/Swift";
 import JawsDBIcon from "../../components/Icons/JawsDB";
 import FigmaIcon from "../../components/Icons/Figma";
 import IconButton from "../../components/IconButtons/IconButtons";
-import { Close } from "@mui/icons-material";
+import { Close, GitHub } from "@mui/icons-material";
 
 enum Technologies {
   HTML = "HTML",
@@ -87,6 +87,7 @@ type Project = {
   projectImage: string;
   technologies?: Technologies[];
   description?: string;
+  repoUrl?: string;
 };
 
 const projects = [
@@ -104,6 +105,7 @@ const projects = [
     ],
     description:
       "The SMRC platform offers an e-commerce solution for a specialized device repair store. Through this user-friendly site, customers can seamlessly access repair services for their devices. Built with cutting-edge technologies like React and Node, the website ensures smooth navigation and a secure database with MySQL and JawsDB, enhancing the overall user experience. Explore its features at sunderlandmobiles.com.",
+    repoUrl: "https://github.com/MichaelEdes/smrc-site",
   },
   {
     cardTitle: "Wave",
@@ -113,6 +115,7 @@ const projects = [
     technologies: [Technologies.Swift, Technologies.AdobeXD],
     description:
       "Wave is an innovative psychological wellness application. Built with Swift and designed using AdobeXD, the application aims to empower users to track and improve their mental health. With a combination of intuitive design and scientific metrics, Wave offers users comprehensive insights into their psychological well-being. Source code available on GitHub.",
+    repoUrl: "https://github.com/MichaelEdes/Wave",
   },
   {
     cardTitle: "SalesLynk",
@@ -152,9 +155,10 @@ const projects = [
     ],
     description:
       "A digital gateway to a renowned north-east sandwich shop, Metro's website offers a delectable menu in a visually appealing layout. With a strong backend powered by MySQL and Node and a responsive frontend built with React, the platform ensures a delightful and efficient ordering experience. Visit the delicious offerings at metrosandwichco.co.uk.",
+    repoUrl: "https://github.com/MichaelEdes/metro",
   },
   {
-    cardTitle: "Indrex - WIP",
+    cardTitle: "Indrix - WIP",
     cardText: "Futuristic concept e-commerce store",
     projectLink: "https://www.indrex.co.uk",
     projectImage: "https://iili.io/HDp5IYx.png",
@@ -167,6 +171,7 @@ const projects = [
     ],
     description:
       "Indrex promises a futuristic e-commerce experience. Still a work in progress, the store aims to incorporate advanced tech features and a user-friendly interface. Designed with technologies like React, TypeScript, and MySQL, the platform intends to redefine the standard for online shopping. Sneak a peek at indrex.co.uk.",
+    repoUrl: "https://github.com/MichaelEdes/indrix",
   },
 ];
 
@@ -201,11 +206,19 @@ function ProjectDetails({ project, onClose }: ProjectDetailsProps) {
           <button>View Project </button>
         </a>
         <img src={"https://iili.io/HDZJI5P.png"} alt="profileimage" />
+
         <section onClick={onClose}>
           <IconButton classname={styles.projectLink}>
             <Close />
           </IconButton>
         </section>
+        {project.repoUrl && (
+          <IconButton
+            classname={`${styles.projectLink} ${styles.projectRepoLink}`}
+          >
+            <GitHub />
+          </IconButton>
+        )}
       </div>
     </motion.div>
   );
@@ -213,9 +226,19 @@ function ProjectDetails({ project, onClose }: ProjectDetailsProps) {
 
 function Home() {
   const [isOpen, setIsOpen] = useState(true);
-  const [selectedProject, setSelectedProject] = useState<Project | null>(
-    projects[0]
-  );
+  const [selectedProject, setSelectedProject] = useState<Project | null>(null);
+
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [isOpen]);
 
   const handleClose = () => {
     setSelectedProject(null);
@@ -225,7 +248,6 @@ function Home() {
   const handleProjectClick = (project: Project) => {
     setSelectedProject(project);
     setIsOpen(true);
-    console.log(project);
   };
 
   return (
