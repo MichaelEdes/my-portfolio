@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import styles from "./NavBar.module.scss";
 import BurgerIcon from "../BurgerIcon/BurgerIcon";
 import Button from "../Button/Button";
+import useBodyOverflow from "../../hooks/useBodyOverflow";
 interface CustomLinkProps {
   href: string;
   children: React.ReactNode;
@@ -36,32 +37,7 @@ const NavBar = () => {
     };
   }, [lastScrollTop]);
 
-  useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth > 768) {
-        setIsOpen(false);
-      }
-    };
-
-    handleResize();
-
-    window.addEventListener("resize", handleResize);
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
-
-  useEffect(() => {
-    if (isOpen) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "";
-    }
-
-    return () => {
-      document.body.style.overflow = "";
-    };
-  }, [isOpen]);
+  useBodyOverflow(isOpen);
 
   return (
     <header className={`${styles.header} ${showNav ? "" : styles.hide}`}>
