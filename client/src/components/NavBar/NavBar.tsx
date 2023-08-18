@@ -54,7 +54,7 @@ const NavBar = () => {
               Contact
             </CustomLink>
             <Button variation="Download">
-              <a href="../../assets/files/MichaelEdes - CV.pdf" download>
+              <a href="/MichaelEdes - CV.pdf" download>
                 CV
               </a>
             </Button>
