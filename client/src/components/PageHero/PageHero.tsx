@@ -6,15 +6,12 @@ import BlurredCard from "../BlurredCard/BlurredCard";
 const PageHero = () => {
   return (
     <section className={styles.heroContainer} id="intro">
-      <div className={styles.introduction}>
-        <BlurredCard
-          cardTitle="Hello, I'm Michael, a software engineer with 2 years of experience."
-          cardSubTitle="Predominantly working frontend, my experience has allowed me to
-            branch of into whatever I damn well please."
-        >
-          <Contact />
-        </BlurredCard>
-      </div>
+      <BlurredCard
+        cardTitle="Michael Edes: Software Engineer. Innovator. Digital Artisan."
+        cardSubTitle="Crafting transformative applications with a keen eye for user experience. Experienced in full-stack development, from conceptualization to deployment, with a passion for front-end development"
+      >
+        <Contact />
+      </BlurredCard>
       <div className={styles.profileImage}>
         <img src={"https://iili.io/HDQrS24.jpg"} alt="profileimage" />
       </div>
