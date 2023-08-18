@@ -31,3 +31,40 @@ h1 {
     grid-template-columns: 1fr;
   }
 }
+
+.projectDetails {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+
+  div {
+    background-color: white;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr;
+    padding: 2em;
+    width: clamp(18em, 600px, 70vw);
+    margin: 0 2em;
+    border-radius: 2em;
+    h2 {
+      margin: unset;
+    }
+  }
+
+  span {
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: block;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.786);
+    z-index: -1;
+  }
+}

@@ -15,7 +15,7 @@
   overflow: hidden;
   border-radius: 2em;
   -webkit-mask-image: -webkit-radial-gradient(white, black);
-
+  cursor: pointer;
   div {
     padding: 0 3rem 0 0;
   }
@@ -31,8 +31,8 @@
   }
 
   .projectLink {
-    height: 30px;
-    width: 30px;
+    height: 0.5em;
+    aspect-ratio: 1;
     font-size: 200 !important;
     transform: scale(0.7);
     position: absolute;
