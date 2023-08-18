@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import IconButton from "../IconButtons/IconButtons";
 import styles from "./ProjectCard.module.scss";
 import CallMadeIcon from "@mui/icons-material/CallMade";
-import { Expand } from "@mui/icons-material";
 
 type ProjectCardProps = {
   cardTitle: string;
