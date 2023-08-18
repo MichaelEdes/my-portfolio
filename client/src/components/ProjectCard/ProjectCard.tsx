@@ -34,22 +34,14 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           <h4>{cardTitle}</h4>
           <p>{cardText}</p>
         </div>
-        <div>
-          <IconButton
-            href={projectLink}
-            classname={styles.projectLink}
-            target="_blank"
-          >
-            <CallMadeIcon />
-          </IconButton>
-          {isSmallScreen && (
-            <div>
-              <IconButton href="">
-                <Expand />
-              </IconButton>
-            </div>
-          )}
-        </div>
+        <IconButton
+          href={projectLink}
+          classname={styles.projectLink}
+          target="_blank"
+        >
+          <CallMadeIcon />
+        </IconButton>
+        {isSmallScreen && <button onClick={onClick}>View More</button>}
       </div>
       <div className={styles.projectImage} onClick={onClick}>
         <img loading="lazy" src={projectImage} alt="wave project" />

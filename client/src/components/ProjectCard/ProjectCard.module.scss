@@ -49,6 +49,14 @@
     transform: scale(1);
     color: black;
   }
+
+  button {
+    position: absolute;
+    left: 20%;
+    bottom: 1.5em;
+    width: 60%;
+    font-size: smaller !important;
+  }
 }
 
 .projectImage:hover img {
