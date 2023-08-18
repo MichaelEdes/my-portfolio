@@ -14,24 +14,17 @@ const ContactLinks = () => {
       <div className={styles.socialButtonsIcon}>
         <IconButton
           classname={styles.linkedIn}
-          href="https://Linkedin.com"
+          href="https://www.linkedin.com/in/michael-edes-401724215/"
           target="_blank"
         >
           <LinkedInIcon />
         </IconButton>
         <IconButton
           classname={styles.github}
-          href="https://Github.com"
+          href="https://github.com/MichaelEdes"
           target="_blank"
         >
           <GitHubIcon />
-        </IconButton>
-        <IconButton
-          classname={styles.facebook}
-          href="https://Facebook.com"
-          target="_blank"
-        >
-          <FacebookIcon />
         </IconButton>
       </div>
     </div>

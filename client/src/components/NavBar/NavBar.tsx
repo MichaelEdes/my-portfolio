@@ -36,6 +36,21 @@ const NavBar = () => {
     };
   }, [lastScrollTop]);
 
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth > 768) {
+        setIsOpen(false);
+      }
+    };
+
+    handleResize();
+
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <header className={`${styles.header} ${showNav ? "" : styles.hide}`}>
       <div className={styles.navContainer}>
