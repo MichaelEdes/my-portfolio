@@ -206,7 +206,6 @@ function ProjectDetails({ project, onClose }: ProjectDetailsProps) {
           <button>View Project </button>
         </a>
         <img src={"https://iili.io/HDZJI5P.png"} alt="profileimage" />
-
         <section onClick={onClose}>
           <IconButton classname={styles.projectLink}>
             <Close />
@@ -214,6 +213,8 @@ function ProjectDetails({ project, onClose }: ProjectDetailsProps) {
         </section>
         {project.repoUrl && (
           <IconButton
+            href={project.repoUrl}
+            target="_blank"
             classname={`${styles.projectLink} ${styles.projectRepoLink}`}
           >
             <GitHub />
