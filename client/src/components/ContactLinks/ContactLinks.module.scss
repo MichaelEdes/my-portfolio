@@ -9,40 +9,37 @@
   width: 100%;
 }
 
+.linkedIn {
+  color: white;
+  background-color: rgb(32, 49, 195) !important;
+}
+.github {
+  color: white;
+  background-color: rgb(120, 9, 225) !important;
+}
+.facebook {
+  color: white;
+  background-color: rgb(62, 52, 255) !important;
+}
+
+.linkedIn:hover,
+.github:hover,
 .linkedIn:hover {
-  background-color: rgb(32, 49, 195);
-}
-.github:hover {
-  background-color: rgb(120, 9, 225);
-}
-.facebook:hover {
-  background-color: rgb(62, 52, 255);
+  transform: scale(1.2);
 }
 
 @media (max-width: 768px) {
   .socialButtons {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
+    gap: 1rem;
   }
 
   .socialButtonsIcon {
     display: flex;
     width: 100%;
     justify-content: space-evenly;
-  }
-
-  .linkedIn {
-    color: white;
-    background-color: rgb(32, 49, 195) !important;
-  }
-  .github {
-    color: white;
-    background-color: rgb(120, 9, 225) !important;
-  }
-  .facebook {
-    color: white;
-
-    background-color: rgb(62, 52, 255) !important;
+    margin-bottom: -1em;
   }
 }

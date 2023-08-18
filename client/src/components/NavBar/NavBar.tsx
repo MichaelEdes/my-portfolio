@@ -80,11 +80,9 @@ const NavBar = () => {
             <CustomLink onClick={() => setIsOpen(!isOpen)} href="#contact">
               Contact
             </CustomLink>
-            <Button variation="Download">
-              <a href="/MichaelEdes - CV.pdf" target="_blank">
-                CV
-              </a>
-            </Button>
+            <a href="/MichaelEdes - CV.pdf" target="_blank">
+              <Button variation="Download">CV</Button>
+            </a>
           </ul>
         </nav>
         <BurgerIcon isOpen={isOpen} setIsOpen={setIsOpen} />
