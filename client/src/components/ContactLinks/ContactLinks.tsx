@@ -3,7 +3,6 @@ import Button from "../Button/Button";
 import IconButton from "../IconButtons/IconButtons";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
-import FacebookIcon from "@mui/icons-material/Facebook";
 
 const ContactLinks = () => {
   return (
