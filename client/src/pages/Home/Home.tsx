@@ -17,13 +17,13 @@ function Home() {
             cardTitle="SMRC"
             cardText="E-commerce website for device repair store"
             projectLink="https://sunderlandmobiles.com"
-            projectImage="https://iili.io/HDDy8DF.jpg"
+            projectImage="https://iili.io/HbJCoxe.jpg"
           />
           <ProjectCard
             cardTitle="Wave"
             cardText="A psychological health and wellness tracker"
             projectLink=""
-            projectImage="https://iili.io/HDDyQRI.jpg"
+            projectImage="https://iili.io/HbJBUAP.jpg"
           />
           <ProjectCard
             cardTitle="SalesLynk"
@@ -42,7 +42,7 @@ function Home() {
             cardTitle="Metro"
             cardText="Online website for north east sandwich shop"
             projectLink="http://metrosandwichco.co.uk"
-            projectImage="https://iili.io/HDmtKxa.png"
+            projectImage="https://iili.io/HbJCYOP.png"
           />
           <ProjectCard
             cardTitle="Indrex - WIP"
