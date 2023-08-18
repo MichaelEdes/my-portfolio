@@ -3,7 +3,7 @@ import styles from "./IconButtons.module.scss";
 
 interface IconButtonProps {
   classname?: string;
-  href: string;
+  href?: string;
   blank?: boolean;
   noReferrer?: boolean;
   children: ReactNode;
