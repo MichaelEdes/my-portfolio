@@ -16,7 +16,8 @@
   ul {
     display: flex;
     gap: 3em;
-
+    display: flex;
+    align-items: center;
     li {
       list-style: none;
 
@@ -99,4 +100,9 @@
   .menuVisible {
     left: 0;
   }
+}
+
+.downloadCV {
+  display: flex;
+  align-items: ;
 }

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import styles from "./NavBar.module.scss";
 import BurgerIcon from "../BurgerIcon/BurgerIcon";
+import Button from "../Button/Button";
 interface CustomLinkProps {
   href: string;
   children: React.ReactNode;
@@ -44,7 +45,7 @@ const NavBar = () => {
         <nav className={isOpen ? styles.menuVisible : styles.menuHidden}>
           <ul>
             <CustomLink onClick={() => setIsOpen(!isOpen)} href="#intro">
-              Intro
+              Home
             </CustomLink>
             <CustomLink onClick={() => setIsOpen(!isOpen)} href="#projects">
               Projects
@@ -52,6 +53,11 @@ const NavBar = () => {
             <CustomLink onClick={() => setIsOpen(!isOpen)} href="#contact">
               Contact
             </CustomLink>
+            <Button variation="Download">
+              <a href="../../assets/files/MichaelEdes - CV.pdf" download>
+                CV
+              </a>
+            </Button>
           </ul>
         </nav>
         <BurgerIcon isOpen={isOpen} setIsOpen={setIsOpen} />
