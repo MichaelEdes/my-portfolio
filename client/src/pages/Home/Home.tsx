@@ -15,8 +15,6 @@ function Home() {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
 
-  // useBodyOverflow(isOpen);
-
   const handleClose = () => {
     setSelectedProject(null);
     setIsOpen(false);
