@@ -9,7 +9,7 @@ const PageHero = () => {
       <div className={styles.introduction}>
         <BlurredCard
           cardTitle="Michael Edes: Software Engineer. Innovator. Digital Artisan."
-          cardSubTitle="Crafting transformative applications with a keen eye for user experience. Experienced in full-stack development, from conceptualization to deployment, with a passion for front-end development"
+          cardSubTitle="Crafting transformative applications with a keen eye for user experience. Experienced in full-stack development, from conceptualization to deployment, with a passion for front-end development."
         >
           <Contact />
         </BlurredCard>
