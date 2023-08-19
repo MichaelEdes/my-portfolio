@@ -14,9 +14,7 @@ const PageHero = () => {
           <Contact />
         </BlurredCard>
       </div>
-      <div className={styles.profileImage}>
-        <img src={"https://iili.io/HDQrS24.jpg"} alt="profileimage" />
-      </div>
+      <div className={styles.profileImage} />
     </section>
   );
 };
