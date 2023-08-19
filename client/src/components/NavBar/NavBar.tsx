@@ -1,42 +1,13 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import styles from "./NavBar.module.scss";
 import BurgerIcon from "../BurgerIcon/BurgerIcon";
 import Button from "../Button/Button";
 import useBodyOverflow from "../../hooks/useBodyOverflow";
-interface CustomLinkProps {
-  href: string;
-  children: React.ReactNode;
-  onClick: () => void;
-}
-
+import useScrollHide from "../../hooks/useScrollHide";
+import { CustomLinkPropsI } from "../../interfaces/customLinks";
 const NavBar = () => {
-  const [lastScrollTop, setLastScrollTop] = useState(0);
-  const [showNav, setShowNav] = useState(true);
+  const showNav = useScrollHide();
   const [isOpen, setIsOpen] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const currentScrollTop = window.pageYOffset;
-
-      if (currentScrollTop <= 50) {
-        setShowNav(true);
-        return;
-      }
-
-      if (currentScrollTop > lastScrollTop) {
-        setShowNav(false);
-      } else {
-        setShowNav(true);
-      }
-      setLastScrollTop(currentScrollTop);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, [lastScrollTop]);
-
   useBodyOverflow(isOpen);
 
   return (
@@ -47,13 +18,13 @@ const NavBar = () => {
         </a>
         <nav className={isOpen ? styles.menuVisible : styles.menuHidden}>
           <ul>
-            <CustomLink onClick={() => setIsOpen(!isOpen)} href="#intro">
+            <CustomLink onClick={() => setIsOpen(false)} href="#intro">
               Home
             </CustomLink>
-            <CustomLink onClick={() => setIsOpen(!isOpen)} href="#projects">
+            <CustomLink onClick={() => setIsOpen(false)} href="#projects">
               Projects
             </CustomLink>
-            <CustomLink onClick={() => setIsOpen(!isOpen)} href="#contact">
+            <CustomLink onClick={() => setIsOpen(false)} href="#contact">
               Contact
             </CustomLink>
             <a href="/MichaelEdes - CV.pdf" target="_blank">
@@ -67,7 +38,7 @@ const NavBar = () => {
   );
 };
 
-function CustomLink({ href, children, onClick }: CustomLinkProps) {
+function CustomLink({ href, children, onClick }: CustomLinkPropsI) {
   return (
     <li onClick={onClick}>
       <a href={href}>{children}</a>

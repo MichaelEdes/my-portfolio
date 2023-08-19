@@ -1,12 +1,12 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { techstack } from "../../types/technologies";
-import { ProjectDetailsProps } from "../../interfaces/project";
+import { ProjectDetailsPropsT } from "../../types/project";
 import IconButton from "../IconButtons/IconButtons";
 import { GitHub, Close } from "@mui/icons-material";
 import styles from "./ProjectDetailsCard.module.scss";
 
-function ProjectDetails({ project, onClose }: ProjectDetailsProps) {
+function ProjectDetails({ project, onClose }: ProjectDetailsPropsT) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 50 }}

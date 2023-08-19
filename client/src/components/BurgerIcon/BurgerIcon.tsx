@@ -1,12 +1,8 @@
 import React from "react";
 import styles from "./BurgerIcon.module.scss";
+import { BurgerIconPropsI } from "../../interfaces/burgerIcon";
 
-interface BurgerIconProps {
-  isOpen: boolean;
-  setIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
-}
-
-function BurgerIcon({ isOpen, setIsOpen }: BurgerIconProps) {
+function BurgerIcon({ isOpen, setIsOpen }: BurgerIconPropsI) {
   const handleIconClick = () => {
     setIsOpen(!isOpen);
   };

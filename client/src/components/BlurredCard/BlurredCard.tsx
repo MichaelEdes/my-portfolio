@@ -1,14 +1,8 @@
-import React, { ReactNode } from "react";
+import React from "react";
 import styles from "./BlurredCard.module.scss";
+import { BlurredCardPropsI } from "../../interfaces/blurredCard";
 
-interface BlurredCardProps {
-  cardTitle: string;
-  cardSubTitle: string;
-  cardText?: string;
-  children: ReactNode;
-}
-
-const BlurredCard: React.FC<BlurredCardProps> = ({
+const BlurredCard: React.FC<BlurredCardPropsI> = ({
   cardTitle,
   cardSubTitle,
   cardText,

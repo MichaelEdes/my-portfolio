@@ -2,16 +2,9 @@ import React, { useState, useEffect } from "react";
 import IconButton from "../IconButtons/IconButtons";
 import styles from "./ProjectCard.module.scss";
 import CallMadeIcon from "@mui/icons-material/CallMade";
+import { ProjectCardPropsT } from "../../types/projectCard";
 
-type ProjectCardProps = {
-  cardTitle: string;
-  cardText: string;
-  projectLink: string;
-  projectImage: string;
-  onClick: () => void;
-};
-
-const ProjectCard: React.FC<ProjectCardProps> = ({
+const ProjectCard: React.FC<ProjectCardPropsT> = ({
   cardTitle,
   cardText,
   projectLink,

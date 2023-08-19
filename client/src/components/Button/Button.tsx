@@ -1,18 +1,13 @@
 import React from "react";
 import styles from "./Button.module.scss";
-
-interface ButtonProps {
-  children: React.ReactNode;
-  onClick?: () => void;
-  variation?: "Default" | "Download";
-}
+import { ButtonPropsI } from "../../interfaces/button";
 
 const Button = ({
   children,
   onClick,
   variation = "Default",
   ...props
-}: ButtonProps) => {
+}: ButtonPropsI) => {
   return (
     <button
       className={`${

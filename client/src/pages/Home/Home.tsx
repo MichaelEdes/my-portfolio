@@ -6,7 +6,7 @@ import PageHero from "../../components/PageHero/PageHero";
 import PageFooter from "../../components/PageFooter/PageFooter";
 import ProjectCard from "../../components/ProjectCard/ProjectCard";
 import { AnimatePresence } from "framer-motion";
-import { Project } from "../../interfaces/project";
+import { Project } from "../../types/project";
 import { projects } from "../../data/projects";
 import useBodyOverflow from "../../hooks/useBodyOverflow";
 import ProjectDetails from "../../components/ProjectDetailsCard/ProjectDetailsCard";
@@ -27,8 +27,6 @@ function Home() {
     setIsOpen(true);
   };
 
-  console.log(isOpen);
-  console.log(selectedProject);
   return (
     <div className={styles.container}>
       <NavBar />

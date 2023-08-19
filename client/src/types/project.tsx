@@ -1,4 +1,4 @@
-import { Technologies } from "../types/technologies";
+import { Technologies } from "./technologies";
 
 export type Project = {
   cardTitle: string;
@@ -10,7 +10,7 @@ export type Project = {
   repoUrl?: string;
 };
 
-export type ProjectDetailsProps = {
+export type ProjectDetailsPropsT = {
   project: Project;
   onClose: () => void;
 };
