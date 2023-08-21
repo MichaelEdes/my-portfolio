@@ -22,7 +22,7 @@ export const projects = [
     cardText:
       "A blog consisting of travelling blogs discussing food, culture and activities",
     projectLink: "https://master--jovial-frangipane-d7f59d.netlify.app/",
-    projectImage: "https://iili.io/HpXbX3v.jpg",
+    projectImage: "https://iili.io/HpXy2CF.jpg",
     technologies: [
       Technologies.React,
       Technologies.JavaScript,
