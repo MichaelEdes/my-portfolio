@@ -7,13 +7,7 @@ export const projects = [
       "My most recent project, my portfolio displaying current and previous projects",
     projectLink: "https://michaeledes.com",
     projectImage: "https://iili.io/Hph2Z41.png",
-    technologies: [
-      Technologies.React,
-      Technologies.TypeScript,
-      Technologies.MySQL,
-      Technologies.Node,
-      Technologies.JawsDB,
-    ],
+    technologies: [Technologies.React, Technologies.TypeScript],
     description:
       "Welcome to my personal portfolio, a reflection of my journey in the tech world. Here, you'll discover a compilation of projects I've undertaken, including this very portfolio. Crafted with React and TypeScript for a seamless interface, it's powered by MySQL with backend processes streamlined via Node.js and further enhanced with JawsDB. Dive in to understand my expertise and evolution as a developer.",
     repoUrl: "https://github.com/MichaelEdes/my-portfolio",
