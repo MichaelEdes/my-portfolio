@@ -18,6 +18,23 @@ export const projects = [
     repoUrl: "https://github.com/MichaelEdes/smrc-site",
   },
   {
+    cardTitle: "Travel Blog",
+    cardText:
+      "A blog consisting of travelling blogs discussing food, culture and activities",
+    projectLink: "https://master--jovial-frangipane-d7f59d.netlify.app/",
+    projectImage: "https://iili.io/HpXbX3v.jpg",
+    technologies: [
+      Technologies.React,
+      Technologies.JavaScript,
+      Technologies.MySQL,
+      Technologies.Node,
+      Technologies.JawsDB,
+    ],
+    description:
+      "The 'Travel Blog' is a digital platform that showcases captivating travel narratives focused on food, culture, and activities worldwide. Built with React and TypeScript for a dynamic front end, it utilizes MySQL for data storage, Node.js for the backend operations, and integrates JawsDB for seamless database management. Experience diverse global adventures in one click!",
+    repoUrl: "https://github.com/MichaelEdes/my-blog",
+  },
+  {
     cardTitle: "Wave",
     cardText: "A psychological health and wellness tracker",
     projectLink: "https://github.com/MichaelEdes/Wave",
