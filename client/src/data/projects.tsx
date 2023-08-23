@@ -9,7 +9,7 @@ export const projects = [
     projectImage: "https://iili.io/Hph2Z41.png",
     technologies: [Technologies.React, Technologies.TypeScript],
     description:
-      "Welcome to my personal portfolio, a reflection of my journey in the tech world. Here, you'll discover a compilation of projects I've undertaken, including this very portfolio. Crafted with React and TypeScript for a seamless interface, it's powered by MySQL with backend processes streamlined via Node.js and further enhanced with JawsDB. Dive in to understand my expertise and evolution as a developer.",
+      "Welcome to my personal portfolio, a reflection of my journey in the tech world. Here, you'll discover a compilation of projects I've undertaken, including this very portfolio. Crafted with React and TypeScript for a seamless interface. Dive in to understand my expertise and evolution as a developer.",
     repoUrl: "https://github.com/MichaelEdes/my-portfolio",
   },
   {
@@ -25,7 +25,7 @@ export const projects = [
       Technologies.JawsDB,
     ],
     description:
-      "The SMRC platform offers an e-commerce solution for a specialized device repair store. Through this user-friendly site, customers can seamlessly access repair services for their devices. Built with cutting-edge technologies like React and Node, the website ensures smooth navigation and a secure database with MySQL and JawsDB, enhancing the overall user experience. Explore its features at sunderlandmobiles.com.",
+      "The SMRC platform offers an e-commerce solution for a specialized device repair store. Through this user-friendly site, customers can seamlessly access repair services for their devices as well as purchase new ones. Built with React and Node, the website ensures smooth navigation and a secure database with MySQL and JawsDB, enhancing the overall user experience. Explore its features by clicking the view project button below.",
     repoUrl: "https://github.com/MichaelEdes/smrc-site",
   },
 
@@ -43,7 +43,7 @@ export const projects = [
       Technologies.JawsDB,
     ],
     description:
-      "The 'Travel Blog' is a digital platform that showcases captivating travel narratives focused on food, culture, and activities worldwide. Built with React and TypeScript for a dynamic front end, it utilizes MySQL for data storage, Node.js for the backend operations, and integrates JawsDB for seamless database management. Experience diverse global adventures in one click!",
+      "The 'Travel Blog' is a blog site that showcases captivating travel narratives focused on food, culture, and activities worldwide. Built with React and Javascript for a dynamic front end, it utilizes MySQL for data storage, Node.js for the backend operations, and integrates JawsDB for seamless database management. Experience diverse global adventures in one click!",
     repoUrl: "https://github.com/MichaelEdes/my-blog",
   },
   {
@@ -59,7 +59,7 @@ export const projects = [
       Technologies.JawsDB,
     ],
     description:
-      "A digital gateway to a renowned north-east sandwich shop, Metro's website offers a delectable menu in a visually appealing layout. With a strong backend powered by MySQL and Node and a responsive frontend built with React, the platform ensures a delightful and efficient ordering experience. Visit the delicious offerings at metrosandwichco.co.uk.",
+      "A digital gateway to a renowned north-east sandwich shop, Metro's website offers a delectable menu in a visually appealing layout. With a strong backend powered by MySQL and Node and a responsive frontend built with React, the platform ensures a delightful and efficient ordering experience. Visit the delicious offerings using the view project link below.",
     repoUrl: "https://github.com/MichaelEdes/metro",
   },
   {
@@ -69,7 +69,7 @@ export const projects = [
     projectImage: "https://iili.io/HbJBUAP.jpg",
     technologies: [Technologies.Swift, Technologies.AdobeXD],
     description:
-      "Wave is an innovative psychological wellness application. Built with Swift and designed using AdobeXD, the application aims to empower users to track and improve their mental health. With a combination of intuitive design and scientific metrics, Wave offers users comprehensive insights into their psychological well-being. Source code available on GitHub.",
+      "Wave is an innovative psychological wellness application. Built with Swift and designed using AdobeXD, the application aims to empower users to track and improve their mental and physical health. With a combination of intuitive design and scientific metrics, Wave offers users comprehensive insights into their psychological well-being. Source code available on GitHub.",
     repoUrl: "https://github.com/MichaelEdes/Wave",
   },
 
